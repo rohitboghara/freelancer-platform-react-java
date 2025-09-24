@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+
+
+  frontend:
+    build: ./frontend
+    container_name: frontend-app
+    ports:
+     - "3001:80"
+    networks:
+     - freelance-network
+    environment:
+     - VITE_API_URL:http://localhost:3031
+     
+
+  backend:
+    build: ./backend
+    container_name: backend
+    environment:
+      spring.datasource.url: jdbc:mysql://mysql-db:3306/progigs
+      spring.datasource.username: root
+      spring.datasource.password: root
+      spring.jpa.show-sql: true
+      server.port: 3031
+    ports:
+      - "8081:8080"
+      - "3031:3031"
+    depends_on:
+      - mysql
+    networks:
+     - freelance-network
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: progigs
+
+    volumes:
+      - data:/var/lib/mysql
+      - ./databases/Dump20250922.sql:/docker-entrypoint-initdb.d/Dump20250922.sql
+    networks:
+     - freelance-network
+
+volumes:
+   data:
+networks:
+    freelance-network:
+      driver: bridge

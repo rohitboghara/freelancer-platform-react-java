@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dce609b6-521c-475e-9c65-171b175d31f0" name="Changes" comment="implement remain features">
+      <change beforePath="$PROJECT_DIR$/PROGIGS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/OpenAi.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/OpenAi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/ProjectConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/ProjectConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/BankDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/BankDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/CertificateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/CertificateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/EducationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/EducationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/JobsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/JobsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/PortfolioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/PortfolioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ProposalsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ProposalsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/BankDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/BankDetailsDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/CertificateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/CertificateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ClientDetailsForJobDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ClientDetailsForJobDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ContractDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ContractDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/EducationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/EducationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/JobDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/JobDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/JobDtoForCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/JobDtoForCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/LoginDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/NotificationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/NotificationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/PortfolioDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/PortfolioDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForViewCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProfileDtoForViewCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProposalsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProposalsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProposalsDtoForGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ProposalsDtoForGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/ReviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/UserDtoAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/DTOs/UserDtoAuth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/BankDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/BankDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Certificates.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Certificates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/ContractStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/ContractStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Jobs.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Jobs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/LocalVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/LocalVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Module.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Pay0ut_Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Pay0ut_Methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Profile_Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Profile_Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Proposals.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Proposals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/PropsalStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/PropsalStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Transaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/CustomWebSocketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/CustomWebSocketHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/NoContentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/NoContentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/UserAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/GetAuthenticatedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/GetAuthenticatedUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/BankDetailsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/BankDetailsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/CertificateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/CertificateMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ContractMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ContractMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/EducationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/EducationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/JobMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/NotificationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/NotificationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/PortfolioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/PortfolioMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ProfileMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ProfileMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ProposalMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ProposalMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/ReviewMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/ProgigsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/ProGigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/BankDetailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/BankDetailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/CertificateRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/CertificateRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ContractRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ContractRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/EducationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/EducationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/InvoiceRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/InvoiceRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/JobRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/JobRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/MilestoneRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/MilestoneRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/NotificationRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/NotificationRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/PortfolioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/PortfolioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ProfileRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ProposalsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ProposalsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ReviewRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/ReviewRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/TransactionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/TransactionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/BankDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/BankDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/CertificateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/CertificateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/EducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/JobService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/PortfolioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/PortfolioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ProposalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ProposalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/BankDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/BankDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/CertificateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/CertificateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/EducationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/EducationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/JobServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/NotificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/NotificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/PortfolioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/PortfolioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProfileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProfileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProposalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProposalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PROGIGS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PROGIGS/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PROGIGS_jar/PROGIGS.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="HarshilMalaviya &lt;142708535+harshilmalaviya@users.noreply.github.com&gt;" />
+        <option value="harshil malaviya &lt;harshilmalaviya@gmail.com&gt;" />
+        <option value="Dhyey &lt;dhyeybaldha90@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/6.3.3/spring-security-core-6.3.3-sources.jar!/org/springframework/security/core/authority/SimpleGrantedAuthority.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2nBZY8QbZv4TWgnO3bg3oD7HYun" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ProgigsApplication.executor": "Run",
+    "Application.com.ntra.progigs.ProGigApplication.executor": "Run",
+    "Maven.PROGIGS [clean].executor": "Run",
+    "Maven.PROGIGS [compile].executor": "Run",
+    "Maven.PROGIGS [install].executor": "Run",
+    "Maven.PROGIGS [package].executor": "Run",
+    "Maven.PROGIGS [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "Dhyey",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/dhyey/IdeaProjects/Main.PROGIG/PROGIGS/src/test/java",
+    "last_opened_file_path": "D:/New folder/New folder/backend",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.Ntra.PROGIGS.DTOs" />
+      <recent name="com.Ntra.PROGIGS.Exception" />
+      <recent name="com.Ntra.PROGIGS.Interceptor" />
+      <recent name="com.Ntra.PROGIGS.Service" />
+      <recent name="com.Ntra.PROGIGS.Entity" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.Ntra.PROGIGS.Filter" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Ntra.PROGIGS" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.ntra.progigs.ProGigApplication">
+    <configuration name="ProGigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Ntra.PROGIGS.ProGigApplication" />
+      <module name="PROGIGS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Ntra.PROGIGS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ntra.progigs.ProGigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ntra.progigs.ProGigApplication" />
+      <module name="PROGIGS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ntra.progigs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.ntra.progigs.ProGigApplication" />
+        <item itemvalue="Application.ProGigApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dce609b6-521c-475e-9c65-171b175d31f0" name="Changes" comment="" />
+      <created>1728448473860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728448473860</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Entity,Repository,Dto and Mapper added for Jobs and Proposals">
+      <option name="closed" value="true" />
+      <created>1728627508550</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728627508550</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Job push">
+      <option name="closed" value="true" />
+      <created>1736225179529</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736225179529</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Jwt token implementation">
+      <option name="closed" value="true" />
+      <created>1736229981541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736229981542</updated>
+    </task>
+    <task id="LOCAL-00004" summary="JOB api implementation">
+      <option name="closed" value="true" />
+      <created>1736490279517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736490279517</updated>
+    </task>
+    <task id="LOCAL-00005" summary="change in user entity">
+      <option name="closed" value="true" />
+      <created>1738412477638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738412477638</updated>
+    </task>
+    <task id="LOCAL-00006" summary="change in user entity">
+      <option name="closed" value="true" />
+      <created>1738412666240</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738412666240</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/resources/application.properties">
+      <option name="closed" value="true" />
+      <created>1738728848454</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738728848454</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/resources/application.properties">
+      <option name="closed" value="true" />
+      <created>1740722476539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740722476539</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/User.java">
+      <option name="closed" value="true" />
+      <created>1740725476577</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740725476577</updated>
+    </task>
+    <task id="LOCAL-00010" summary="creating all the entity that needed and connect tham then=m which each other">
+      <option name="closed" value="true" />
+      <created>1740975400835</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740975400835</updated>
+    </task>
+    <task id="LOCAL-00011" summary="database update">
+      <option name="closed" value="true" />
+      <created>1740977927728</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740977927728</updated>
+    </task>
+    <task id="LOCAL-00012" summary="entity update">
+      <option name="closed" value="true" />
+      <created>1741007393916</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741007393916</updated>
+    </task>
+    <task id="LOCAL-00013" summary="CLOUDINARY IMPLEMENTATION">
+      <option name="closed" value="true" />
+      <created>1741064469095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741064469095</updated>
+    </task>
+    <task id="LOCAL-00014" summary="CHANGES">
+      <option name="closed" value="true" />
+      <created>1741149718318</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741149718320</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/SecurityConfig.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Portfolio.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/JwtAuthenticationFilter.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserImpl.java">
+      <option name="closed" value="true" />
+      <created>1741184490002</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741184490002</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Merge pull request #21 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #19 from HarshilMalaviya">
+      <option name="closed" value="true" />
+      <created>1741238767833</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741238767833</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey">
+      <option name="closed" value="true" />
+      <created>1741240743678</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741240743678</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey">
+      <option name="closed" value="true" />
+      <created>1741242976775</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741242976775</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProfileServiceImpl.java">
+      <option name="closed" value="true" />
+      <created>1741330056436</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741330056436</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProfileServiceImpl.java">
+      <option name="closed" value="true" />
+      <created>1741331746588</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741331746588</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey">
+      <option name="closed" value="true" />
+      <created>1741331988888</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741331988888</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey">
+      <option name="closed" value="true" />
+      <created>1741501458853</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741501458853</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey">
+      <option name="closed" value="true" />
+      <created>1741755204009</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1741755204009</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey">
+      <option name="closed" value="true" />
+      <created>1742190772577</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1742190772577</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Merge remote-tracking branch 'origin/Dhyey' into Dhyey">
+      <option name="closed" value="true" />
+      <created>1742271911801</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1742271911801</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey">
+      <option name="closed" value="true" />
+      <created>1742284023047</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1742284023047</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1742542747472</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1742542747472</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1742794761455</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1742794761455</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1742795575042</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1742795575042</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1742796558963</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1742796558963</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1742878071445</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1742878071446</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey">
+      <option name="closed" value="true" />
+      <created>1743482657022</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1743482657022</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Merge pull request #45 from HarshilMalaviya/harshil&#10;&#10;Harshil">
+      <option name="closed" value="true" />
+      <created>1744090362744</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1744090362744</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Merge pull request #48 from HarshilMalaviya/Dhyey&#10;&#10;Merge pull request #45 from HarshilMalaviya/harshil">
+      <option name="closed" value="true" />
+      <created>1744130331656</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1744130331656</updated>
+    </task>
+    <task id="LOCAL-00035" summary="implement review notification">
+      <option name="closed" value="true" />
+      <created>1745295175545</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745295175545</updated>
+    </task>
+    <task id="LOCAL-00036" summary="implement review notification">
+      <option name="closed" value="true" />
+      <created>1745475604244</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1745475604244</updated>
+    </task>
+    <task id="LOCAL-00037" summary="implement review notification">
+      <option name="closed" value="true" />
+      <created>1745584703086</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1745584703086</updated>
+    </task>
+    <task id="LOCAL-00038" summary="implement review notification">
+      <option name="closed" value="true" />
+      <created>1745584737031</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1745584737031</updated>
+    </task>
+    <task id="LOCAL-00039" summary="implement remain features">
+      <option name="closed" value="true" />
+      <created>1745758342378</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1745758342379</updated>
+    </task>
+    <task id="LOCAL-00040" summary="implement remain features">
+      <option name="closed" value="true" />
+      <created>1745817446900</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1745817446902</updated>
+    </task>
+    <task id="LOCAL-00041" summary="implement remain features">
+      <option name="closed" value="true" />
+      <created>1745847268653</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1745847268653</updated>
+    </task>
+    <task id="LOCAL-00042" summary="implement remain features">
+      <option name="closed" value="true" />
+      <created>1745849335083</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1745849335083</updated>
+    </task>
+    <task id="LOCAL-00043" summary="implement remain features">
+      <option name="closed" value="true" />
+      <created>1758540964911</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1758540964912</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:javax.validation:validation-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jwt token implementation" />
+    <MESSAGE value="JOB api implementation" />
+    <MESSAGE value="change in user entity" />
+    <MESSAGE value="change in BankDetails" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/resources/application.properties" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/User.java" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/User.java&#10;#&#9;PROGIGS/src/main/resources/application-prod.properties" />
+    <MESSAGE value="creating all the entity that needed and connect tham then=m which each other" />
+    <MESSAGE value="database update" />
+    <MESSAGE value="entity update" />
+    <MESSAGE value="CLOUDINARY IMPLEMENTATION" />
+    <MESSAGE value="CHANGES" />
+    <MESSAGE value="API creating and create certif" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Configration/SecurityConfig.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Entity/Portfolio.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Filter/JwtAuthenticationFilter.java&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/UserImpl.java" />
+    <MESSAGE value="Merge pull request #21 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #19 from HarshilMalaviya" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Dhyey' into Dhyey&#10;&#10;# Conflicts:&#10;#&#9;PROGIGS/src/main/java/com/Ntra/PROGIGS/Service/ServiceImpl/ProfileServiceImpl.java" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Dhyey' into Dhyey" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/HarshilMalaviya/Main.PROGIG into Dhyey" />
+    <MESSAGE value="Merge pull request #34 from HarshilMalaviya/harshil&#10;&#10;Merge pull request #31 from HarshilMalaviya/Dhyey" />
+    <MESSAGE value="Merge pull request #45 from HarshilMalaviya/harshil&#10;&#10;Harshil" />
+    <MESSAGE value="Merge pull request #48 from HarshilMalaviya/Dhyey&#10;&#10;Merge pull request #45 from HarshilMalaviya/harshil" />
+    <MESSAGE value="impl" />
+    <MESSAGE value="Merge pull request #52 from HarshilMalaviya/harshil&#10;&#10;review implemented" />
+    <MESSAGE value="implement review notification" />
+    <MESSAGE value="implement remain features" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement remain features" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PROGIGS/src/main/java/com/ntra/progigs/Controller/ContractController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
