@@ -1,0 +1,36 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: frontend-deployment
+  namespace: freelancer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: freelancer-frontend
+  template:
+    metadata:
+      labels:
+        app: freelancer-frontend
+    spec:
+      containers:
+        - name: freelancer
+          image: root938/freelancers-frontend:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: VITE_API_URL
+              value: http://localhost:3031
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend-service
+  namespace: freelancer
+spec:
+  selector:
+    app: freelancer-frontend  
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

@@ -1,0 +1,89 @@
+
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+   name: mysql-pv-volume
+   namespace: freelancer
+spec:
+   storageClassName: manual
+   capacity:
+     storage: 1Gi
+   accessModes:
+    - ReadWriteOnce
+   hostPath:
+    path: /mnt/data/mysql
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+    name: mysql-pv-claim
+    namespace: freelancer
+spec:
+  storageClassName: manual
+  accessModes:
+   - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-secret
+  namespace: freelancer 
+ 
+type: Opaque
+stringData:
+  MYSQL_ROOT_PASSWORD: root
+  MYSQL_DATABASE: progigs
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: mysql-deployment
+   namespace: freelancer
+spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: mysql
+   template:
+     metadata:
+       labels:
+         app: mysql
+     spec:
+      containers:
+      - name: mysql
+        image: mysql:8.0
+        ports:
+        - containerPort: 3306
+        envFrom:
+          - secretRef:
+              name: mysql-secret
+        volumeMounts:
+        - name: mysql-persistent-storage
+          mountPath: /var/lib/mysql 
+        - name: sql-dump
+          mountPath: /tmp/Dump20250922.sql  
+      volumes:
+        - name: mysql-persistent-storage 
+          persistentVolumeClaim:
+            claimName: mysql-pv-claim
+        - name: sql-dump
+          configMap:
+            name: mysql-dump  
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: mysql-service
+  namespace: freelancer
+spec:
+   selector:
+     app: mysql 
+   ports:
+   - protocol: TCP
+     port: 3306
+     targetPort: 3306
