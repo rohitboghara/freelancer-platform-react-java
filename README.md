@@ -89,7 +89,7 @@ java -jar target/*.jar
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 # or if yarn
 # yarn
 # yarn start
@@ -106,16 +106,16 @@ Create `.env` (or `application.properties`) files as required by each service. E
 **backend:**
 
 ```
-SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/freelancerdb
-SPRING_DATASOURCE_USERNAME=postgres
-SPRING_DATASOURCE_PASSWORD=changeme
+SPRING_DATASOURCE_URL=jdbc:mysql://mysql-db:3306/freelancerdb
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=root
 JWT_SECRET=your_jwt_secret_here
 ```
 
 **frontend:**
 
 ```
-REACT_APP_API_URL=http://localhost:8080/api
+VITE_API_URL:http://localhost:3031
 ```
 
 ---
@@ -159,18 +159,6 @@ npm test
 
 ---
 
-## 🏗️ Project Architecture & Endpoints
-
-*(Add / edit these to match the actual implemented API routes and DB schema.)*
-
-* `GET /api/jobs` — list jobs
-* `POST /api/jobs` — create job (authenticated)
-* `POST /api/auth/login` — user login
-* `GET /api/users/{id}` — get user profile
-
-Database: `users`, `jobs`, `proposals`, `messages`, `transactions`.
-
----
 
 ## 📦 Docker
 
