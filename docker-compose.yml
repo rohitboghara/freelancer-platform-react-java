@@ -23,6 +23,7 @@ services:
       spring.datasource.password: root
       spring.jpa.show-sql: true
       server.port: 3031
+      restart: always
     ports:
       - "8081:8080"
       - "3031:3031"
@@ -45,6 +46,19 @@ services:
       - ./databases/Dump20250922.sql:/docker-entrypoint-initdb.d/Dump20250922.sql
     networks:
      - freelance-network
+  nginx_web:
+    image: nginx:latest
+    container_name: nginx 
+    ports:
+     - "443:443"
+    networks:
+     - freelance-network
+    volumes:
+     - ./default.conf:/etc/nginx/conf.d/default.conf
+     - ./certs/localhost.crt:/etc/ssl/certs/localhost.crt
+     - ./certs/localhost.key:/etc/ssl/private/localhost.key
+
+
 
 volumes:
    data:

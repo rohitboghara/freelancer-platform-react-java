@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dce609b6-521c-475e-9c65-171b175d31f0" name="Changes" comment="implement remain features" />
+    <list default="true" id="dce609b6-521c-475e-9c65-171b175d31f0" name="Changes" comment="implement remain features">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +69,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/dhyey/IdeaProjects/Main.PROGIG/PROGIGS/src/test/java",
-    "last_opened_file_path": "D:/New folder/New folder/backend",
+    "last_opened_file_path": "D:/New folder/freelancer-platform-react-java/backend",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
