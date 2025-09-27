@@ -1,13 +1,14 @@
-package com.Ntra.PROGIGS;
+package com.ntra.progigs;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProgigsApplicationTests {
+class ProGigApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 
 }
+
