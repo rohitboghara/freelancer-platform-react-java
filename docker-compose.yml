@@ -13,6 +13,8 @@ services:
     environment:
      - VITE_API_URL:http://localhost:3031
      
+     
+     
 
   backend:
     build: ./backend
