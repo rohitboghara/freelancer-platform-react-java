@@ -25,7 +25,8 @@ services:
       spring.datasource.password: root
       spring.jpa.show-sql: true
       server.port: 3031
-      restart: always
+      spring.jpa.show-sql: "true" 
+    restart: always
     ports:
       - "8081:8080"
       - "3031:3031"
