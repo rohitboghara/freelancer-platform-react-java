@@ -2,7 +2,7 @@
 
 # Set the name for the cluster
 CLUSTER_NAME="my-k8s"
-CONFIG_FILE="config.yml"
+CONFIG_FILE="config/config.yml"
 
 # Check if kind is installed
 if ! command -v kind &> /dev/null; then
